@@ -15,7 +15,7 @@ llm = Ollama(model="llama2", request_timeout=30.0,base_url=BASEURL)
 
 loader = PyMuPDFReader()
 
-documents = loader.load(file_path="./machinelearning-lecture01.pdf")
+documents = loader.load(file_path="./data/machinelearning-lecture01.pdf")
 client = qdrant_client.QdrantClient(
     path="./qdrant_data"
 )
